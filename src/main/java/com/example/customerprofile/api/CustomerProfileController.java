@@ -13,6 +13,7 @@ import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -26,6 +27,9 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @OpenAPIDefinition(
+        servers = {
+                @Server(url = "/", description = "Default Server URL")
+             },
         info = @Info(
                 title = "Customer Profile Management API",
                 version = "1.0"),
