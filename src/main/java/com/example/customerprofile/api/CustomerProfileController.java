@@ -28,7 +28,7 @@ import javax.validation.Valid;
 
 @OpenAPIDefinition(
         servers = {
-                @Server(url = "/", description = "Default Server URL")
+                @Server(url = "https://customer-profile.mae.run.postcvs.tapsme.org", description = "Default Server URL")
              },
         info = @Info(
                 title = "Customer Profile Management API",
